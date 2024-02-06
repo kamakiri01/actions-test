@@ -2,19 +2,17 @@ name: Node.js CI
 
 on: push
 
+env:
+  NODE_VERSION: 18
+
 jobs:
   build:
 
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [windows-latest]
-        node-version: [14.x]
-
+    runs-on: windows-latest
+    name: test-ci
     steps:
     - uses: actions/checkout@v2
-    - name: lint
+    - name: foo
       run: |
         npm ci
         echo $?
