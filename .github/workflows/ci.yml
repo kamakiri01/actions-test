@@ -1,0 +1,26 @@
+name: Node.js CI
+
+on: push
+
+jobs:
+  build:
+
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [windows-latest]
+        node-version: [14.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: lint
+      run: |
+        npm ci
+        echo $?
+        npm run maybe-error
+        echo $?
+        ls
+        echo $?
+        npm run b
+        echo $?
