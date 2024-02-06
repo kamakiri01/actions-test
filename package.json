@@ -1,0 +1,15 @@
+{
+  "name": "action-error-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "a": "echo $? && hoge && echo $?",
+    "b": "npm run a && eco $?",
+    "c": "ls"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
