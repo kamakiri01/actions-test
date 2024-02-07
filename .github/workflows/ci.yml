@@ -8,6 +8,7 @@ env:
 jobs:
   build:
 
+    shell: /usr/bin/bash -e {0}
     runs-on: windows-latest
     name: test-ci
     steps:
