@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: foo
-      shell: /usr/bin/bash -e {0}
+      shell: bash
       run: |
         npm i
         npm run no-error
