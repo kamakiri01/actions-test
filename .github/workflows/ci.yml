@@ -8,12 +8,12 @@ env:
 jobs:
   build:
 
-    shell: /usr/bin/bash -e {0}
     runs-on: windows-latest
     name: test-ci
     steps:
     - uses: actions/checkout@v2
     - name: foo
+      shell: /usr/bin/bash -e {0}
       run: |
         npm i
         echo $?
