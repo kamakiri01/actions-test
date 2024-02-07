@@ -16,10 +16,6 @@ jobs:
       shell: /usr/bin/bash -e {0}
       run: |
         npm i
-        echo $?
         npm run maybe-error
-        echo $?
         ls
-        echo $?
         npm run b
-        echo $?
