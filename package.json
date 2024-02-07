@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "no-error": "ls",
     "maybe-error": "hogehoge",
     "a": "ls && hoge && ls",
     "b": "npm run a && ls",

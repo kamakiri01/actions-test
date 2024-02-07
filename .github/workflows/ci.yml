@@ -16,6 +16,7 @@ jobs:
       shell: /usr/bin/bash -e {0}
       run: |
         npm i
+        npm run no-error
         npm run maybe-error
         ls
         npm run b
