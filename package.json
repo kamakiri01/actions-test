@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "maybe-error": "hogehoge",
-    "a": "echo $? && hoge && echo $?",
-    "b": "npm run a && eco $?",
+    "a": "ls && hoge && ls",
+    "b": "npm run a && ls",
     "c": "ls"
 
   },
