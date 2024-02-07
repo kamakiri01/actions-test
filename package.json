@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "a": "echo $? && hoge && echo $?",
-    "b": "npm run a && eco $?",
+    "no-error": "ls",
+    "maybe-error": "hogehoge",
+    "a": "ls && hoge && ls",
+    "b": "npm run a && ls",
     "c": "ls"
 
   },

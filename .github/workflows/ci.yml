@@ -1,0 +1,22 @@
+name: Node.js CI
+
+on: push
+
+env:
+  NODE_VERSION: 18
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+    name: test-ci
+    steps:
+    - uses: actions/checkout@v2
+    - name: foo
+      shell: bash
+      run: |
+        npm i
+        npm run no-error
+        npm run maybe-error
+        ls
+        npm run b
